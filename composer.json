@@ -1,0 +1,47 @@
+{
+    "name": "martinbean/laravel-papertrail",
+    "description": "A Papertrail log channel for Laravel applications.",
+    "version": "1.0.0",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "papertrail",
+        "log",
+        "logging",
+        "monolog"
+    ],
+    "readme": "README.md",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Bean",
+            "email": "martin@martinbean.co.uk",
+            "homepage": "http://martinbean.co.uk"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/martinbean/laravel-papertrail/issues",
+        "source": "https://github.com/martinbean/laravel-papertrail"
+    },
+    "require": {
+        "illuminate/log": "~5.6",
+        "illuminate/support": "~5.6",
+        "monolog/monolog": "~1.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "MartinBean\\LaravelPapertrail\\": "src/"
+        }
+    },
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MartinBean\\LaravelPapertrail\\LaravelPapertrailServiceProvider"
+            ]
+        }
+    }
+}

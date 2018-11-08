@@ -1,7 +1,9 @@
 # Laravel Papertrail log channel
 
 ## Requirements
-* Your application must be running Laravel 5.6+
+* Your application must be running Laravel 5.6.
+
+**Note:** Laravel added a native Papertrail logging channel in version 5.7, so if you are running Laravel 5.7+ this package is unnecessary.
 
 ## Installation
 1. Set two environment variables: `PAPERTRAIL_HOST` and `PAPERTRAIL_PORT`.
